@@ -2,9 +2,7 @@
 
 int main(void) {
 
-	int num;
-	char c = 'c';
-	float ff = 3.1123;
-
+	short a = 5000;
+	printf("%d", sizeof a * a);
 	return 0;
 }
