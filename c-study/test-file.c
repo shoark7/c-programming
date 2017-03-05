@@ -2,7 +2,15 @@
 
 int main(void) {
 
-	short a = 5000;
-	printf("%d", sizeof a * a);
-	return 0;
+	printf("hi");
+
+	for(int i = 1; i <= 1; ++i)
+	{
+		if( i == 1 )
+			continue;
+		printf("%d ", i);
+
+	}
+
+	printf("\n");
 }
