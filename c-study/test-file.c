@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+int ok(void)
+{
+	printf("ok");
+}
+
 int main(void) {
 
 	printf("hi");
