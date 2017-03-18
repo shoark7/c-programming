@@ -106,7 +106,7 @@ void post_order(Node *p) {
 >>> In-order  result  : H D B I E J A F C G K 
 >>> Post-order result : H D I J E B F K G C A 
 ```
-Node *p = (Node*)malloc(sizeof(Node));` 이것만 얻어가도 좋은 수확인 것 같다.  
+`Node \*p = (Node\*)malloc(sizeof(Node));` 이것만 얻어가도 좋은 수확인 것 같다.  
 Node만큼 메모리를 동적 할당해서 그 노드의 포인터를 얻는다. 
 
 <br><br>
@@ -246,5 +246,5 @@ if __name__ == '__main__':
     print()
 ```
 
-여기서 Binary_tree 클래스는 노드들의 집합체가 단순히 함수만 가진 래퍼? 느낌이다.  
+여기서 Binary_tree 클래스는 노드들의 집합체가 단순히 함수만 가진 퍼? 느낌이다.  
 뭔가 마음이 안 드는데 어떻게 해야 할까??
