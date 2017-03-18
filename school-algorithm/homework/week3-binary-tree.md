@@ -9,7 +9,7 @@
 
 먼저 이진트리를 C로 구현한다.
 
-"""c
+```c
 /* Binary tree in C
  *
  * 2017/03/20. Sunghwan Park. All rights are not reserved.
@@ -105,8 +105,8 @@ void post_order(Node *p) {
 >>> Pre-order  result : A B D H E I J C F G K 
 >>> In-order  result  : H D B I E J A F C G K 
 >>> Post-order result : H D I J E B F K G C A 
-"""
-`Node *p = (Node*)malloc(sizeof(Node));` 이것만 얻어가도 좋은 수확인 것 같다.  
+```
+Node *p = (Node*)malloc(sizeof(Node));` 이것만 얻어가도 좋은 수확인 것 같다.  
 Node만큼 메모리를 동적 할당해서 그 노드의 포인터를 얻는다. 
 
 <br><br>
