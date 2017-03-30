@@ -40,6 +40,7 @@ void quick_sort(int[], int, int);
 
 // 선택정렬
 void selection_sort(int a[], int offset, int end) {
+    // offset은 함수 인자 개수를 맞추기 위한 더미변수. 의미 없음.
 
     int i, j, index;
     int temp;
@@ -63,15 +64,16 @@ void selection_sort(int a[], int offset, int end) {
 
 // 버블정렬
 void bubble_sort(int a[], int offset,  int end) {
+    // offset은 함수 인자 개수를 맞추기 위한 더미변수. 의미 없음.
 
     int i, j, temp;
     bool changed;
 
-    for( i = end; i > 0; i-- )
+    for (i = end; i > 0; i--)
     {
         changed = false;
 
-        for( j = 0; j < i; j++ )
+        for (j = 0; j < i; j++)
         {
             if (a[j] > a[j + 1]) {
                 temp = a[j];
@@ -91,6 +93,7 @@ void bubble_sort(int a[], int offset,  int end) {
 
 // 삽입정렬
 void insertion_sort(int a[], int offset, int end) {
+    // offset은 함수 인자 개수를 맞추기 위한 더미변수. 의미 없음.
 
     int i, j, temp;
 

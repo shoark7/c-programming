@@ -1,0 +1,89 @@
+경영학과 201101328 박성환
+
+과제 2-2: 6가지 정렬이 실행 성능을 비교.
+--------------------------------------------------
+
+********************** 선택정렬 **********************
+
+size :  1000, compare :    1000002, move :     508506
+size :  2000, compare :    4000002, move :    2018074
+size :  3000, compare :    9000002, move :    4528550
+size :  4000, compare :   16000002, move :    8038480
+size :  5000, compare :   25000002, move :   12548663
+size :  6000, compare :   36000002, move :   18058550
+size :  7000, compare :   49000002, move :   24568883
+size :  8000, compare :   64000002, move :   32078346
+size :  9000, compare :   81000002, move :   40588605
+size : 10000, compare :  100000002, move :   50098756
+
+
+********************** 버블정렬 **********************
+
+size :  1000, compare :    1000791, move :    1237216
+size :  2000, compare :    3996889, move :    5073898
+size :  3000, compare :    9001519, move :   11143070
+size :  4000, compare :   15995445, move :   19803046
+size :  5000, compare :   24991429, move :   31247119
+size :  6000, compare :   35990501, move :   44970389
+size :  7000, compare :   48979279, move :   60717175
+size :  8000, compare :   63985949, move :   79887421
+size :  9000, compare :   80946251, move :  100948169
+size : 10000, compare :   99986131, move :  124758475
+
+
+********************** 삽입정렬 **********************
+
+size :  1000, compare :     503401, move :     753110
+size :  2000, compare :    1997565, move :    2992353
+size :  3000, compare :    4426564, move :    6633862
+size :  4000, compare :    7935305, move :   11894972
+size :  5000, compare :   12398008, move :   18587028
+size :  6000, compare :   17985540, move :   26966317
+size :  7000, compare :   24732858, move :   37085297
+size :  8000, compare :   32030453, move :   48029688
+size :  9000, compare :   40489803, move :   60716719
+size : 10000, compare :   49792921, move :   74669390
+
+
+********************** 쉘정렬 **********************
+
+size :  1000, compare :      33323, move :      33232
+size :  2000, compare :      76222, move :      76827
+size :  3000, compare :     124969, move :     125282
+size :  4000, compare :     179314, move :     185969
+size :  5000, compare :     238822, move :     244568
+size :  6000, compare :     281905, move :     286413
+size :  7000, compare :     327190, move :     331670
+size :  8000, compare :     403909, move :     423900
+size :  9000, compare :     448547, move :     450212
+size : 10000, compare :     521224, move :     534350
+
+
+********************** 병합정렬 **********************
+
+size :  1000, compare :      14681, move :      46607
+size :  2000, compare :      31422, move :     101276
+size :  3000, compare :      48924, move :     159634
+size :  4000, compare :      66722, move :     218432
+size :  5000, compare :      85165, move :     280587
+size :  6000, compare :     103892, move :     343314
+size :  7000, compare :     122632, move :     406054
+size :  8000, compare :     141618, move :     469040
+size :  9000, compare :     161012, move :     534858
+size : 10000, compare :     180360, move :     601206
+
+
+********************** 퀵정렬 **********************
+
+size :  1000, compare :      20364, move :      17944
+size :  2000, compare :      45590, move :      40280
+size :  3000, compare :      71154, move :      62666
+size :  4000, compare :     103978, move :      92508
+size :  5000, compare :     128992, move :     114184
+size :  6000, compare :     164806, move :     146749
+size :  7000, compare :     198295, move :     177068
+size :  8000, compare :     228213, move :     203396
+size :  9000, compare :     276892, move :     249100
+size : 10000, compare :     296967, move :     265447
+
+

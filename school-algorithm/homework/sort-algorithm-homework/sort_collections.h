@@ -67,11 +67,11 @@ void bubble_sort(int a[], int offset,  int end) {
     int i, j, temp;
     bool changed;
 
-    for( i = end; i > 0; i-- )
+    for (i = end; i > 0; i--)
     {
         changed = false;
 
-        for( j = 0; j < i; j++ )
+        for (j = 0; j < i; j++)
         {
             if (a[j] > a[j + 1]) {
                 temp = a[j];
