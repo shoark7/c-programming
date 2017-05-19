@@ -80,8 +80,8 @@ void print_coin(int coin_unit, int *count_unit){
 int coin_change(int change){
 
     int i;
-    int coin_unit_set[] = {500, 100, 50, 10, 10, 1};
-    int coin_set_size = 6;
+    int coin_unit_set[] = {16, 10, 5, 1};
+    int coin_set_size = 4;
     int coin_count_set[6] = {0};
     int total_number = 0;
 

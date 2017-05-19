@@ -12,12 +12,19 @@
 #include <stdlib.h>
 #define INFINITY 1000000
 
+
+// Function declaration
+int get_coin_change(int change, int* coin_units, int unit_size);
+void print_coin_change(int* cache, int size);
+
+// get_coin_change Function
+//// Get minimum number of coins
 int get_coin_change(int change, int* coin_units, int unit_size) {
     int i, j;
     int number;
-    printf("unit_size is %d\n", unit_size);
-    int* cache = (int*) malloc((change+1) * unit_size);
+    int cache[1000];
     int answer;
+    int count;
 
     cache[0] = 0;
     for(i = 1; i <= change; i++) {
@@ -35,9 +42,41 @@ int get_coin_change(int change, int* coin_units, int unit_size) {
     }
 
     answer = cache[change];
-    free(cache);
+    print_coin_change(cache, change);
 
     if(answer == INFINITY) return -1;
 
     return answer;
 }
+
+
+// Print coin change
+//// Print from 1 to given change
+void print_coin_change(int* cache, int size) {
+    int iter_length = (size % 20 == 0)? size / 20: size / 20 + 1;
+    int i, j;
+    if(cache[size] == INFINITY) {
+	printf("\n\nWe cannot make up money you want..\n");
+	return;
+    }
+    for(i = 0; i < iter_length; i++) {
+	printf("\n\nJ =  ");
+	for(j = i*20 + 1; j <= i*20 + 20; j++) {
+	    if(j > size) return;
+	    printf("%3d  ", j);
+	}
+	printf("\nC =  ");
+	for(j = i*20 + 1; j <= i*20 + 20; j++) {
+	    printf("%3d  ", cache[j]);
+	}
+    }
+}
+
+
+
+
+
+
+
+
+
