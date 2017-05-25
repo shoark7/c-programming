@@ -14,7 +14,7 @@ int main(void) {
     Graph g;
     init_graph(&g);
 
-    printf("\n과제 6-1. 배열로 그래프 구현 201101328 박성환\n");
+    printf("\n  과제 6-1. 배열로 그래프 구현 201101328 박성환\n");
 
     insertVertex(&g, 'A');
     insertVertex(&g, 'B');
@@ -35,10 +35,10 @@ int main(void) {
 
     printGraph(&g);
 
-    printf("Depth First Search   : ");
+    printf("  Depth First Search   : ");
     depthFirstSearch(&g, 'A');
 
-    printf("Breadth First Search : ");
+    printf("  Breadth First Search : ");
     breadthFirstSearch(&g, 'A');
 
     return 0;

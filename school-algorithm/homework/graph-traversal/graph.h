@@ -72,6 +72,10 @@ void init_graph(Graph *g) {
  */
 void insertVertex(Graph *g, char v) {
     int index = get_index(v);
+    if(g->vertex[index] == 1) {
+        printf("Vertex already exists.");
+        return;
+    }
     g->vertex[index] = 1;
     g->nVertices += 1;
 }
@@ -89,6 +93,10 @@ void insertEdge(Graph *g, char v1, char v2, int weight) {
         printf("At least one vertex doesn't exist.\n");
         return;
     }
+    if(g->edge[index1][index2] != 0) {
+	printf("Edge already exsits.\n");
+	return;
+    }
     g->edge[index1][index2] = weight;
     g->edge[index2][index1] = weight;
     g->nEdges += 1;
@@ -103,7 +111,7 @@ void printGraph(Graph *g) {
     int count;
 
     // Vertex section
-    printf("\nV(G) = { ");
+    printf("\n  V(G) = { ");
     count = 1;
     for(i = 0; i < MAX_VERTICES; i++) {
         if(g->vertex[i] != 0) {
@@ -118,7 +126,7 @@ void printGraph(Graph *g) {
     }
 
     // Edge section
-    printf("\nE(G) = { ");
+    printf("\n  E(G) = { ");
     count = 1;
     for(i = 0; i < MAX_VERTICES; i++) {
         for(j = 0; j < MAX_VERTICES; j++) {
